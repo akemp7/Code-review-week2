@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-  $("#panel").hide();
-  $("#flip").click(function(){
-    $("#panel").slideToggle();
+  $("#intro").hide();
+  $("#greeting").click(function(){
+    $("#intro").slideToggle();
   });
 
   $(".quiz").submit(function(event) {
