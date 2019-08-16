@@ -9,22 +9,23 @@ $(document).ready(function(){
     $(".results").hide();
     $(".name").text(name);
 
-      if(goalsInput === "General Knowledge" && experienceInput === "Beginner"){
-          $("#language1").show();
-        }
+      if(goalsInput === "General Knowledge" && experienceInput === "Beginner" || movieInput === "Life of Brian"){
+        $("#language1").fadeToggle(1000);
+        $("#language1").click(function(){
+          $("p").fadeOut();
+        });
 
-      if (movieInput === "Life of Brian" || liveInput === "Rainforest"){
-        $("#language1").show();
       } else if (goalsInput === "Statistics" || movieInput === "Jaws" || pirateInput === "pirate") {
-        $("#language3").show();
+        $("#language3").fadeToggle(1000);
+        $("#language3").click(function(){
+          $("p").fadeOut();
+        });
       } else if (goalsInput === "Develop large, complex software" && experienceInput === "Advanced" || liveInput === "Space" || pirateInput === "A scholarly bear")
-        $("#language2").show();
+        $("#language2").fadeToggle(1000);
+        $("#language2").click(function(){
+          $("p").fadeOut();
+        });
 
-    // if(goalsInput === "General Learning") {
-    //   if(experienceInput === "Beginner") {
-    //     $("#language1").show();
-    //   }
-    // }
       event.preventDefault();
   });
 
