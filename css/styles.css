@@ -1,17 +1,18 @@
 h2{
   text-align: center;
-  color: #a72693;
 }
 
 h4{
   font-size: 14px;
-  color: #723881;
 }
 
 .row p {
   color: #01024e;
 }
 
+.choose{
+  font-style: normal;
+}
 #movie{
   font-style: italic;
 }
@@ -41,4 +42,9 @@ h4{
 
 .hiding{
   color: blue;
+}
+
+img{
+  width: 400px;
+  padding-right: 100px;
 }
