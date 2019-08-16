@@ -9,79 +9,87 @@
   </head>
   <body>
     <div class="container">
-      <h2>What programming language should you learn?</h2>
-      <p>There are many different programming languages out there. With so many to choose from <em>how</em> do you know which one to pick? Take this quiz to find out!</p>
-      <p>All you need to do is to answer these five simple questions!</p>
+      <div class="row">
+        <div class="col-md-7">
+          <h2>What programming language should you learn?</h2>
+          <p>There are many different programming languages out there. With so many to choose from <em>how</em> do you know which one to pick? Take this quiz to find out!</p>
+          <p>All you need to do is to answer these five simple questions!</p>
 
-    <form class="quiz" action="index.html" method="post">
-        <div>
-          <label for="validationServer01">Name</label>
-          <input type="text" class="form-control" id="validationServer01" required >
-          <div class="invalid-feedback">
-            Please provide a valid name.
-          </div>
+        <form class="quiz" action="index.html" method="post">
+            <div>
+              <label for="validationServer01">Name</label>
+              <input type="text" class="form-control" id="validationServer01" required >
+              <div class="invalid-feedback">
+                Please provide a valid name.
+              </div>
+            </div>
+
+            <div class="goals">
+              <h4>What are your goals for programming?</h4>
+              <select class="form-control" id="goals">
+                <option>Statistics</option>
+                <option>General Learning</option>
+                <option>Develop large, complext software</option>
+              </select>
+            </div>
+
+            <div class="experience">
+              <h4>What level of experience do you have with computer languages?</h4>
+              <select class="form-control" id="experience">
+                <option id="beginner">Beginner</option>
+                <option id="intermediate">Intermediate </option>
+                <option id="advanced">Advanced</option>
+              </select>
+            </div>
+
+            <div class="movie">
+              <h4>Pick a movie:</h4>
+              <select class="form-control" id="movie">
+                <option>The Life of Brian</option>
+                <option>Jaws</option>
+                <option>Gaslight</option>
+              </select>
+            </div>
+
+            <div class="live">
+              <h4>Would you rather live: ?</h4>
+              <select class="form-control" id="live">
+                <option>In a rainforest</option>
+                <option>Under the sea</option>
+                <option>In outer space</option>
+              </select>
+            </div>
+
+            <div class="pirates">
+              <h4>Would you rather be a: ?</h4>
+              <select class="form-control" id="pirates">
+                <option>Pirate</option>
+                <option>Ninja</option>
+                <option>A scholarly bear</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-info" id="submit">Submit!</button>
+          </form>
         </div>
 
-        <div class="goals">
-          <h4>What are your goals for programming?</h4>
-          <select class="form-control" id="goals">
-            <option>Statistics</option>
-            <option>General Learning</option>
-            <option>Develop large, complext software</option>
-          </select>
+      <div class="col-md-5">
+        <div class="results" id="language1">
+          <p> Dear <span id="validationServer01"></span>: You should learn Python!</p>
         </div>
 
-        <div class="experience">
-          <h4>What level of experience do you have with computer languages?</h4>
-          <select class="form-control" id="experience">
-            <option id="beginner">Beginner</option>
-            <option id="intermediate">Intermediate </option>
-            <option id="advanced">Advanced</option>
-          </select>
+        <div class="results" id ="language2">
+          <p> Dear <span id="validationServer01"></span>: You should learn Go!</p>
         </div>
 
-        <div class="movie">
-          <h4>Pick a movie:</h4>
-          <select class="form-control" id="movie">
-            <option>The Life of Brian</option>
-            <option>Jaws</option>
-            <option>Gaslight</option>
-          </select>
+        <div class="results">
+          <p> Dear <span id="validationServer01"></span>: You should learn R!</p>
         </div>
+      </div>
+      </div>
 
-        <div class="live">
-          <h4>Would you rather live: ?</h4>
-          <select class="form-control" id="live">
-            <option>In a rainforest</option>
-            <option>Under the sea</option>
-            <option>In outer space</option>
-          </select>
-        </div>
-
-        <div class="pirates">
-          <h4>Would you rather be a: ?</h4>
-          <select class="form-control" id="pirates">
-            <option>Pirate</option>
-            <option>Ninja</option>
-            <option>A scholarly bear</option>
-          </select>
-        </div>
-
-        <button type="submit" class="btn btn-info" id="submit">Submit!</button>
-      </form>
   </div>
 
-    <div class="results" id="language1">
-      <p> Dear <span id="validationServer01"></span>: You should learn Python!</p>
-    </div>
-
-    <div class="results" id ="language2">
-      <p> Dear <span id="validationServer01"></span>: You should learn Go!</p>
-    </div>
-
-    <div class="results">
-      <p> Dear <span id="validationServer01"></span>: You should learn R!</p>
-    </div>
 
 
   </body>
