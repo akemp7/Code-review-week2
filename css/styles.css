@@ -49,3 +49,7 @@ img{
   width: 400px;
   padding-right: 100px;
 }
+
+.jumbotron{
+  background-color: green ; 
+}
