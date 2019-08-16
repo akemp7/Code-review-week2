@@ -22,7 +22,6 @@
           </div>
         </div>
 
-
       <form class="quiz" action="index.html" method="post">
         <div class="goals">
           <h4>What are your goals for programming?</h4>
@@ -36,9 +35,9 @@
         <div class="experience">
           <h4>What level of experience do you have with computer languages?</h4>
           <select class="form-control" id="experience">
-            <option>I'm a complete beginner</option>
-            <option>I have had some experience </option>
-            <option>I have lots and lots of experience</option>
+            <option id="beginner">I'm a complete beginner</option>
+            <option id="intermediate">I have had some experience </option>
+            <option id="advanced">I have lots and lots of experience</option>
           </select>
         </div>
 
@@ -72,11 +71,11 @@
         <button type="submit" class="btn btn-info" id="submit">Submit!</button>
       </form>
 
-    <div class="results">
+    <div class="results" id="language1">
       <p> Dear <span id="validationServer01"></span>: You should learn Python!</p>
     </div>
 
-    <div class="results">
+    <div class="results" id ="language2">
       <p> Dear <span id="validationServer01"></span>: You should learn Go!</p>
     </div>
 
