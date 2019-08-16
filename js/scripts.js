@@ -15,7 +15,7 @@ $(document).ready(function(){
           $("p").fadeOut();
         });
 
-      } else if (goalsInput === "Statistics" || movieInput === "Jaws" || pirateInput === "pirate") {
+      } else if (goalsInput === "Statistics" || pirateInput === "pirate" || experienceInput === "Intermediate") {
         $("#language3").fadeToggle(1000);
         $("#language3").click(function(){
           $("p").fadeOut();

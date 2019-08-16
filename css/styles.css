@@ -1,14 +1,34 @@
+body {
+  background-color: #f9f6f2;
+}
+
+h2{
+  text-align: center;
+  color: #a72693;
+}
+
+h4{
+  font-size: 14px;
+  color: #723881;
+}
+
+.row p {
+  color: #01024e;
+}
+
 #movie{
   font-style: italic;
 }
 
 .results{
   display:none;
-  margin-top: 50%
+  margin-top: 100px;
+  font-style: italic;
+  font-size: 20px;
 }
 
 #submit{
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .invalid-feedback{
@@ -24,5 +44,5 @@
 }
 
 .hiding{
-  color: blue; 
+  color: blue;
 }
