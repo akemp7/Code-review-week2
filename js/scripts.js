@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+  $("#flip").click(function(){
+    $("#panel").slideToggle();
+  });
+
   $(".quiz").submit(function(event) {
     var name = $("input#validationServer01").val();
     var goalsInput= $("select#goals").val();
