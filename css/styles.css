@@ -9,3 +9,15 @@
 #submit{
   margin-top: 20px;
 }
+
+.invalid-feedback{
+  display:none;
+}
+
+#validationServer01 {
+  width: 25%;
+}
+
+.form-control{
+  width: 25%;
+}

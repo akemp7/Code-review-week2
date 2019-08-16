@@ -13,8 +13,8 @@
       <p>There are many different programming languages out there. With so many to choose from <em>how</em> do you know which one to pick? Take this quiz to find out!</p>
       <p>All you need to do is to answer these five simple questions!</p>
 
-      <form class="userinformation" type>
-        <div class="form-group">
+    <form class="quiz" action="index.html" method="post">
+        <div>
           <label for="validationServer01">Name</label>
           <input type="text" class="form-control" id="validationServer01" required >
           <div class="invalid-feedback">
@@ -22,22 +22,21 @@
           </div>
         </div>
 
-      <form class="quiz" action="index.html" method="post">
         <div class="goals">
           <h4>What are your goals for programming?</h4>
           <select class="form-control" id="goals">
-            <option>I need a place to do statistics!</option>
-            <option>I am new to programming and just want to learn</option>
-            <option>I need a language that I can use to develop large, complex software!</option>
+            <option>Statistics</option>
+            <option>General Learning</option>
+            <option>Develop large, complext software</option>
           </select>
         </div>
 
         <div class="experience">
           <h4>What level of experience do you have with computer languages?</h4>
           <select class="form-control" id="experience">
-            <option id="beginner">I'm a complete beginner</option>
-            <option id="intermediate">I have had some experience </option>
-            <option id="advanced">I have lots and lots of experience</option>
+            <option id="beginner">Beginner</option>
+            <option id="intermediate">Intermediate </option>
+            <option id="advanced">Advanced</option>
           </select>
         </div>
 
@@ -70,6 +69,7 @@
 
         <button type="submit" class="btn btn-info" id="submit">Submit!</button>
       </form>
+  </div>
 
     <div class="results" id="language1">
       <p> Dear <span id="validationServer01"></span>: You should learn Python!</p>
@@ -83,6 +83,6 @@
       <p> Dear <span id="validationServer01"></span>: You should learn R!</p>
     </div>
 
-    </div>
+
   </body>
 </html>
